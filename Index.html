@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="VNM Publication is a multidisciplinary academic journal publisher offering fast and affordable publication services.">
+    <meta name="keywords"
+        content="academic journals, multidisciplinary journal, research paper publication, VNM Publication">
+    <meta name="author" content="VNM Publication">
+
+    <!-- Open Graph (Social Sharing) -->
+    <meta property="og:title" content="VNM Publication – Fast and Affordable Research Publishing">
+    <meta property="og:description"
+        content="Submit your valuable research to VNM Publication for quick review and multidisciplinary reach.">
+    <meta property="og:url" content="https://vnmpublication.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://vnmpublication.com/og-image.jpg">
+
+    <title>VNM Publication | Multidisciplinary Academic Journal</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="site-title"><a href="Index.html">VNM Publication</a></div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Journals</a></li>
+                    <li><a href="#">Submission</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hp-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Empower Your Ideas with VNM Publications</h1>
+                <p>naveen</p>
+                <a href="#get-started" class="cta-btn">Publish with confidence today</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- HTML -->
+<section id="journals" class="journal-section">
+  <div class="container">
+    <h2>Explore Our Peer-Reviewed Journals</h2>
+    <p>
+      VNM Publication is home to a diverse portfolio of multidisciplinary journals, ensuring that researchers
+      across fields find the right platform for their work.
+      All submissions undergo a rigorous peer-review process to maintain academic excellence and integrity.
+      Whether you're in medicine, engineering, agriculture, or chemistry — we have a journal for you.
+    </p>
+
+    <div class="journal-slider">
+      <div class="journal-slider-track">
+        <div class="journal-card">
+          <a href="/journal-of-medical-science.html">
+            <img src="image/engineering.png" alt="Journal of Medical Science">
+          </a>
+          <p>
+            Journal of Medical Science – Advance clinical knowledge with research in medicine, diagnostics,
+            pharmaceuticals, public health, and biotechnology.
+          </p>
+        </div>
+        <div class="journal-card">
+          <a href="/journal-of-agriculture.html">
+            <img src="image/chemistry.png" alt="Journal of Agriculture">
+          </a>
+        </div>
+        <div class="journal-card">
+          <a href="/journal-of-engineering.html">
+            <img src="image/MEDICAL JOURNALS.png" alt="Journal of Engineering">
+          </a>
+        </div>
+        <div class="journal-card">
+          <a href="/journal-of-chemistry.html">
+            <img src="image/nursing.png" alt="Journal of Chemistry">
+          </a>
+        </div>
+        <!-- Add more cards as needed -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section id="submission" class="submission-section">
+        <div class="form-container">
+            <div class="form-header">
+                <h4>Submit Your Manuscript Here</h4>
+            </div>
+            <form action="submissionform.php" method="post" enctype="multipart/form-data">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="data1" placeholder="Your Name..">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="data2" placeholder="Email..">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contact">Contact Number</label>
+                        <input type="text" id="contact" name="data3" placeholder="Contact Number..">
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Title of the Article</label>
+                        <input type="text" id="title" name="data3_1" placeholder="Article name..">
+                    </div>
+                </div>
+                <div class="form-full">
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="data5" placeholder="Write something.." rows="4"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group file-upload">
+                        <input type="file" name="userfile1[]" multiple>
+                    </div>
+                    <div class="form-group submit-btn">
+                        <button type="submit" name="submit" value="submissionbtn">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:editor@vnmpublication.com">editor@vnmpublication.com</a></p>
+            <p>WhatsApp: +91-XXXXXXXXXX</p>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 VNM Publication. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

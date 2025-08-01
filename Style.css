@@ -1,0 +1,352 @@
+/* Reset and base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+.main-header {
+    background: #0c2f64;
+    height: 60px;
+}
+
+.main-header .container {
+    position: relative;
+    height: 100%;
+}
+
+.site-title a {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* Navigation */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.main-nav a:hover {
+    color: yellow;
+}
+
+/* Hero Section */
+.hp-hero {
+    background: url('image/header_banner_new5.png') center/cover no-repeat;
+    width: 100%;
+    padding: 150px 20px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    color: white;
+}
+
+.hp-hero .container {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hp-hero h1 {
+    position: relative;
+    left: 900px;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hp-hero p {
+    position: relative;
+    text-align: justify;
+    left: 9000px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+/* CTA Button */
+.cta-btn {
+    position: relative;
+    left: 900px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+.cta-btn:hover {
+    background-color: orange;
+}
+
+/* Wide Card (Full Width) */
+.wide-full-card {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+
+/* Regular Wide Card */
+.wide-card {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+/* CSS */
+/* ===== Journal Section ===== */
+
+.journal-slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.journal-slider-track {
+  display: flex;
+  animation: slideLeft 20s linear infinite;
+  width: max-content;
+  gap: 24px;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.journal-card {
+  flex: 0 0 auto;
+  width: 210px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.journal-card:hover {
+  transform: scale(1.03);
+}
+
+.journal-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 6px 6px 0 0;
+}
+
+.journal-section p {
+  text-align: justify;
+  font-size: 16px;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.7;
+}
+
+.journal-section h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #222;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+
+.journal-slider:hover .journal-slider-track {
+  animation-play-state: paused;
+}
+
+
+.submission-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.form-container {
+  max-width:80%;
+  margin: auto;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-header {
+  background-color: #004466;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-full {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="file"] {
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fdfdfd;
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  padding: 12px 24px;
+  background-color: #004466;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+}
+
+button[type="submit"]:hover {
+  background-color: #006680;
+}
+
+/* ==========================
+   Contact Section
+   ========================== */
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.contact-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+  font-weight: 600;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.contact-section a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+  color: #005fa3;
+}
+
+
+/* ==========================
+   Footer
+   ========================== */
+.main-footer {
+  background-color: #222;
+  padding: 20px 0;
+  color: #ccc;
+}
+
+.main-footer .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-footer p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+.main-footer p a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.main-footer p a:hover {
+  color: #ddd;
+}
+
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
